@@ -1,0 +1,13 @@
+div{
+    margin: 10% 10% 10% 10%;
+}
+
+h1{
+    margin-left: 20px;
+    background-color: light-gray;
+}
+div.corner{
+    padding:10px;
+    float:right;
+    margin-top:100%;
+}
