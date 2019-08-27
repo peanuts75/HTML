@@ -1,13 +1,61 @@
-div{
-    margin: 10% 10% 10% 10%;
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-image:
+        linear-gradient(
+            0deg,
+            rgba(255,0,0,0.3) 12.50%, 
+            rgba(0,255,0,0.3) 12.50%, 
+            rgba(0,255,0,0.3) 25%, 
+            rgba(0,0,255,0.3) 25%, 
+            rgba(0,0,255,0.3) 37.50%, 
+            rgba(255,255,255,0.3) 37.50%, 
+            rgba(255,255,255,0.3) 50%, 
+            rgba(255,0,0,0.3) 50%, 
+            rgba(255,0,0,0.3) 62.50%, 
+            rgba(0,255,0,0.3) 62.50%, 
+            rgba(0,255,0,0.3) 75%, 
+            rgba(0,0,255,0.3) 75%, 
+            rgba(0,0,255,0.3) 87.50%, 
+            rgba(255,255,255,0.3) 87.50%, 
+            rgba(255,255,255,0.3) 100%),
+        linear-gradient(
+            90deg,
+            rgba(255,0,0,0.2) 12.50%, 
+            rgba(0,255,0,0.2) 12.50%, 
+            rgba(0,255,0,0.2) 25%, 
+            rgba(0,0,255,0.2) 25%, 
+            rgba(0,0,255,0.2) 37.50%, 
+            rgba(0,0,0,0.2) 37.50%, 
+            rgba(0,0,0,0.2) 50%, 
+            rgba(255,0,0,0.2) 50%, 
+            rgba(255,0,0,0.2) 62.50%, 
+            rgba(0,255,0,0.2) 62.50%, 
+            rgba(0,255,0,0.2) 75%, 
+            rgba(0,0,255,0.2) 75%, 
+            rgba(0,0,255,0.2) 87.50%, 
+            rgba(0,0,0,0.2) 87.50%, 
+            rgba(0,0,0,0.2) 100%);
+        background-size: 90.00px 90.00px;
+}
+
+body{
+    
+    margin:10%;
 }
 
 h1{
-    margin-left: 20px;
-    background-color: light-gray;
+    
+
 }
-div.corner{
+
+#titlebox{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
     padding:10px;
-    float:right;
-    margin-top:100%;
+    margin:10px;
+    border-radius:40px;
+
 }
