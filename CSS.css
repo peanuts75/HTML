@@ -174,3 +174,52 @@ p{
 sup{
     font-size:8px;
 }
+
+.secretbackground{
+    background-image: /* pixelised background for the whole page */
+        linear-gradient(
+            45deg,
+            rgba(255,0,0,0.025) 12.50%, /* each pair of these is a gradient strip */
+            rgba(0,255,0,0.025) 12.50%, /* first is colour, then width of the total bar */
+            rgba(0,255,0,0.025) 25%, /* takes some experimentation to undstand the width percentage... */
+            rgba(0,0,255,0.025) 25%, /* by having each pair start and end the same, they're not gradient, but strips of colour */
+            rgba(0,0,255,0.025) 37.50%, /* the pairs don't match up as you'd expect either, it can be pretty finnicky */
+            rgba(255,255,255,0.025) 37.50%, 
+            rgba(255,255,255,0.025) 50%, 
+            rgba(255,0,0,0.025) 50%, 
+            rgba(255,0,0,0.025) 62.50%, 
+            rgba(0,255,0,0.025) 62.50%, 
+            rgba(0,255,0,0.025) 75%, 
+            rgba(0,0,255,0.025) 75%, 
+            rgba(0,0,255,0.025) 87.50%, 
+            rgba(255,255,255,0.025) 87.50%, 
+            rgba(255,255,255,0.025) 100%),
+        linear-gradient(
+            135deg, /* this counts as a seperate image, despite not even being an image. It's rotated 90 degrees and put on top of the other */
+            rgba(255,0,0,0.05) 12.50%, 
+            rgba(0,255,0,0.05) 12.50%, 
+            rgba(0,255,0,0.05) 25%, 
+            rgba(0,0,255,0.05) 25%, 
+            rgba(0,0,255,0.05) 37.50%, 
+            rgba(0,0,0,0.05) 37.50%, 
+            rgba(0,0,0,0.05) 50%, 
+            rgba(255,0,0,0.05) 50%, 
+            rgba(255,0,0,0.05) 62.50%, 
+            rgba(0,255,0,0.05) 62.50%, 
+            rgba(0,255,0,0.05) 75%, 
+            rgba(0,0,255,0.05) 75%, 
+            rgba(0,0,255,0.05) 87.50%, 
+            rgba(0,0,0,0.05) 87.50%, 
+            rgba(0,0,0,0.05) 100%);
+        background-size: 90.00px 90.00px; /* this is the scale for both background 'images', changing this affects the resolution of the grid */
+}
+
+.secretimage{
+    display:block;
+    width:75%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    border: 4px solid rgba(60, 0, 120,0.5);
+    
+}
